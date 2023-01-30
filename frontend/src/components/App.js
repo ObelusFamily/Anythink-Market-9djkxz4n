@@ -14,6 +14,7 @@ import Register from "./Register";
 import Settings from "./Settings";
 import { store } from "../store";
 import { push } from "react-router-redux";
+import './i18n'
 
 const mapStateToProps = (state) => {
   return {
