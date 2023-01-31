@@ -9,7 +9,7 @@ import {
   HOME_PAGE_UNLOADED,
   APPLY_TAG_FILTER,
 } from "../../constants/actionTypes";
-import SwitchingLanguage from "./SwitchingLanguage";
+import SwitchingLanguage from "../SwitchingLanguage";
 
 const Promise = global.Promise;
 
