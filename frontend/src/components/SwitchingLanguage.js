@@ -12,13 +12,11 @@ const SwitchingLanguage = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(languageMap[0].value);
 
     return (
-        <>
     <select onChange={language => setSelectedLanguage(language.value)} value={selectedLanguage} name="set-language">
         {languageMap.map((language) => (
           <option value={language.value}>{language.label}</option>
         ))}
       </select>
-        </>
     );
 };
   
