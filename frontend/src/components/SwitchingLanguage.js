@@ -12,7 +12,7 @@ const SwitchingLanguage = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(languageMap[0].value);
 
     return (
-    <select doonChange={language => setSelectedLanguage(language.value)} value={selectedLanguage} id="set-language">
+    <select onChange={language => setSelectedLanguage(language.value)} value={selectedLanguage} id="set-language">
         {languageMap.map((language) => (
           <option value={language.value}>{language.label}</option>
         ))}
