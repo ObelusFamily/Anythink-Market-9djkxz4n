@@ -13,9 +13,9 @@ const SwitchingLanguage = () => {
 
     return (
         <>
-    <select onChange={language => setSelectedLanguage(language.value)} value={selectedLanguage}>
-        {languageMap.map((fruit) => (
-          <option value={fruit.value}>{fruit.label}</option>
+    <select onChange={language => setSelectedLanguage(language.value)} value={selectedLanguage} name="set-language">
+        {languageMap.map((language) => (
+          <option value={language.value}>{language.label}</option>
         ))}
       </select>
         </>
