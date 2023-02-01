@@ -9,7 +9,6 @@ import {
   HOME_PAGE_UNLOADED,
   APPLY_TAG_FILTER,
 } from "../../constants/actionTypes";
-import SwitchingLanguage from "../SwitchingLanguage";
 
 const Promise = global.Promise;
 
@@ -46,8 +45,8 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home-page">
-        <SwitchingLanguage/>
         <Banner />
+
         <div className="container page">
           <Tags tags={this.props.tags} onClickTag={this.props.onClickTag} />
           <MainView />

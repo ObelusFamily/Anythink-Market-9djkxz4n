@@ -1,22 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../imgs/topbar_logo.png";
-import { useTranslation } from 'react-i18next';
-
 
 const LoggedOutView = () => {
-  const { t } = useTranslation();
   return (
     <ul className="navbar-nav ml-auto">
       <li className="nav-item">
         <Link to="/login" className="nav-link">
-        {t('text.signin')}
+          Sign in
         </Link>
       </li>
 
       <li className="nav-item">
         <Link to="/register" className="nav-link">
-        {t('text.signup')}
+          Sign up
         </Link>
       </li>
     </ul>
